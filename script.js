@@ -19,7 +19,9 @@ function updateClock() {
   secondEl.innerText = s;
   (ampmEl, (innerText = ampm));
 
-  setTimeout(() => {});
+  setTimeout(() => {
+    updateClock();
+  }, 1000);
 }
 
 updateClock();
